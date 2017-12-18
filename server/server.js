@@ -25,7 +25,7 @@ app.get('/api/employers', (req, res) => {
 
 // any routes not picked up by the server api will be handled by the react router
 app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, './build', 'index.html'));
+  res.sendFile(path.join(__dirname, './client/build', 'index.html'));
 });
 
 app.listen(PORT, () => console.log(`App listening on ${PORT}`));
