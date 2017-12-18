@@ -19,7 +19,7 @@ class PageEmployee extends Component {
 	componentDidMount() {
 		axios({
 			method: 'GET',
-			url: '/api/cities',
+			url: '/api/employers',
 			responseType: 'json'})
 		.then(res => this.setState({matches: res.data}))
 	}
