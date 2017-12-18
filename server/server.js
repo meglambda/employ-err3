@@ -1,18 +1,20 @@
 const employees = require('./employees.js');
 const employers = require('./employers.js');
-import bodyParser from 'body-parser'
-import express from 'express'
-import path from 'path'
+import bodyParser from 'body-parser';
+import express from 'express';
+import path from 'path';
 
 const PORT = process.env.PORT || 8080;
-const app = express()
+const app = express();
+const staticFiles = express.static(path.join(__dirname, '../../client/build'))
 
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: false}))
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
 
 // app.use(express.static('public'));
-app.use(express.static('build'));
-
+// app.use(express.static('build'));
+app.use(staticFiles)
 
 app.get('/api/employees', (req, res) => {
 	res.send(employees);
@@ -34,8 +36,7 @@ app.listen(PORT, () => console.log(`Employ{err} app server listening on port ${P
 
 // const router = express.Router()
 
-// const staticFiles = express.static(path.join(__dirname, '../../client/build'))
-// app.use(staticFiles)
+
 
 // router.get('/api/cities', (req, res) => {
 //   const cities = [
