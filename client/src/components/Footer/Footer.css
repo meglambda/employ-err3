@@ -1,0 +1,14 @@
+.swipetext {
+	position: relative;
+	bottom: 9.43px;
+	text-transform: uppercase;
+	font-size: 12vw;
+	width: 100%;
+	font-weight: 700;
+	font-style: italic;
+	background-color: transparent;
+}
+ .container-fluid {
+ 	position: absolute;
+ 	
+ }
