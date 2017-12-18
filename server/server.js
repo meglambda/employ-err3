@@ -10,8 +10,8 @@ const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
-app.use(express.static('public'));
-// app.use(express.static('build'));
+// app.use(express.static('public'));
+app.use(express.static('build'));
 
 
 app.get('/api/employees', (req, res) => {
@@ -22,13 +22,13 @@ app.get('/api/employers', (req, res) => {
 	res.send(employers);
 });
 
-app.get('/*', (req, res) => {
-	res.sendFile(path.join(__dirname,'../public/index.html'));
-});
-
 // app.get('/*', (req, res) => {
-//   res.sendFile(path.join(__dirname, './build', 'index.html'));
+// 	res.sendFile(path.join(__dirname,'../public/index.html'));
 // });
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, './build', 'index.html'));
+});
 
 app.listen(PORT, () => console.log(`Employ{err} app server listening on port ${PORT}`));
 
