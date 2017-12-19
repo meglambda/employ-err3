@@ -20,16 +20,18 @@ class ProfileEmployer extends React.Component{
                   </div>
                   <div className="card-block pt-4 text-center">
                     <h3 className="color-primary">Bio</h3>
-                    <p>Rock Star, Deep Thinker, Lover of La-Fawnduh..</p>
+                    <textarea  rows={3} cols={25} defaultValue={"Rock Star, Deep Thinker, Lover of La-Fawnduh...\n"} className=" input-group input-group-xl text-center" style={{height:"auto", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}} />
+                     {/*<p>Rock Star, Deep Thinker, Lover of La-Fawnduh..</p>*/}
                      <hr/>
-        				<div className="input-group input-group-sm">
-        				 {/*<span class="input-group-addon" id="basic-addon1">Title</span>*/}
-        				  <input type="text" className="form-control  text-center" placeholder="Amazon Recruiter" aria-label="email-address" aria-describedby="sizing-addon2"/>
-        				 </div>
-                     	 <div className="input-group input-group-sm">
+              			<div className="input-group input-group-sm">
+              				 {/*<span class="input-group-addon" id="basic-addon1">Title</span>*/}
+              				  <input type="text" className="form-control  text-center" placeholder="Amazon Recruiter" aria-label="email-address" aria-describedby="sizing-addon2" style={{boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}/>
+              			</div>
+                   <strong> <div className="input-group input-group-sm">
                         	{/*<span class="input-group-addon" id="basic-addon1">Email</span>*/}
-                        	<input type="text" className="form-control  text-center" placeholder="kip.dynamite@gmail.com" aria-label="email-address" aria-describedby="sizing-addon2"/>
-                      	</div>
+                       <input type="text" className="form-control  text-center" placeholder="kip.dynamite@gmail.com" aria-label="email-address" aria-describedby="sizing-addon2" style={{boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",}}/>
+                     </div></strong>
+
                   </div>
                 </div>
               </div>
