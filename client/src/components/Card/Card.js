@@ -15,7 +15,6 @@ function Card(props) {
 			</div>
 		</a>
 	)
-	
 }
 
 
