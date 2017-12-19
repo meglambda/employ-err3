@@ -1,0 +1,11 @@
+#modal-image {
+	position: relative;
+}
+
+#modal-text {
+	position: absolute;
+	bottom: 0;
+	left: auto;
+	right: auto;
+	color: rgb(238, 95, 70);
+}
