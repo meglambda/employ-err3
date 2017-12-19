@@ -37,7 +37,7 @@ class PageEmployee extends Component {
 			<div>
 				<Navigator openNav={this.openNav} none='none'/>
 				<div id="mySidenav" className="sidenav" style={{zIndex: "2000"}}>
-				  <a className="closebtn" onClick={() => this.closeNav()}>&times;</a>
+				  <a style={{color:"white"}} className="closebtn" onClick={() => this.closeNav()}>&times;</a>
 				  <ProfileEmployee />
 				</div>
 
