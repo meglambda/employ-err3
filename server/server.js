@@ -9,6 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 const staticFiles = express.static(path.join(__dirname, '../../client/build'));
 
+
 // DATABASE configuration for MONGOOSE 
 const databaseUri = 'mongodb://localhost/employer';
 
@@ -18,9 +19,12 @@ if (process.env.MONGODB_URI) {
 	mongoose.connect(databaseUri);
 }
 
+mongoose.Promise = Promise;
+mongoose.set('debug', true);
 
 db.on('error', (err) => console.log('Mongoose Error: ', err));
 db.once('open', () => console.log('Mongoose connection successful'));
+
 
 
 app.use(bodyParser.json());
@@ -32,7 +36,6 @@ app.use('/', routes);
 app.use('/*', staticFiles);
 
 
-mongoose.connect('mongodb://localhost/employer');
 
 app.listen(PORT, () => console.log(`App listening on port: ${PORT}`));
 

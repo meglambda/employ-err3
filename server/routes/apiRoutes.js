@@ -5,6 +5,7 @@ import Employers from '../models/employers.js';
 const router = express.Router();
 
 
+// return all employees from database
 router.get('/api/employees', (req, res) => {
 	Employees.find({})
 		.then((results) => {
@@ -16,6 +17,7 @@ router.get('/api/employees', (req, res) => {
 		})
 });
 
+// return all employers from database
 router.get('/api/employers', (req, res) => {
 	Employers.find({})
 		.then((results) => {
