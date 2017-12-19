@@ -16,10 +16,10 @@ function ModalSwipeEmployer(props) {
 		      </div>
 		      <div className="modal-body">
 			         <div className="modal-image">
-			        	<img id="modal-image" src="https://upload.wikimedia.org/wikipedia/en/a/ae/RonSwanson.jpg" style={{padding: "0", height: "100%", width: "100%"}} />
+			        	<img id="modal-image" src="https://upload.wikimedia.org/wikipedia/en/a/ae/RonSwanson.jpg" style={{padding: "0", height: "100%", width: "100%"}} alt="Employer Modal"/>
 			        	<div id="modal-text">
 			        	<p>Full Stack Web Ninja</p>
-			        	<p>Super chill, superfly, super coder</p>
+			        	<p>Super chill, super fly, super coder</p>
 			        	</div>
 		          </div>
 		        </div>	

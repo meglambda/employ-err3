@@ -16,7 +16,7 @@ function ModalSwipeEmployee() {
 		      </div>
 		      <div className="modal-body">
 			         <div className="modal-image">
-			        	<img id="modal-image" src="https://seeklogo.com/images/F/facebook-logo-39A76724E4-seeklogo.com.png" style={{padding: "0", height: "100%", width: "100%"}} />
+			        	<img id="modal-image" src="https://seeklogo.com/images/F/facebook-logo-39A76724E4-seeklogo.com.png" style={{padding: "0", height: "100%", width: "100%"}} alt="Employee Modal"/>
 			        	<div id="modal-text">
 			        	<p>Ceo - Facebook</p>
 			        	<p>Facebook knows everything about you</p>
