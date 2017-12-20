@@ -11,7 +11,7 @@ const EmployeesSchema = new Schema({
 	image: String,
 	title: String,
 	bio: String,
-	email: Number,
+	email: String,
 	searchable: Boolean,
 	skills: [String],
 	matches: [String],

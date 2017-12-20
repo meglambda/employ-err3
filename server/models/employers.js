@@ -11,7 +11,7 @@ const EmployersSchema = new Schema({
 	image: String,
 	title: String,
 	bio: String,
-	email: Number,
+	email: String,
 	website: String,
 	matches: [String],
 	connections: [String],
