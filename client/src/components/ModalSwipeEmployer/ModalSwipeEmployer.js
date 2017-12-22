@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./ModalSwipeEmployer.css"
 
 
 
@@ -9,21 +9,25 @@ function ModalSwipeEmployer(props) {
 		  <div className="modal-dialog" role="document">
 		    <div className="modal-content">
 		      <div className="modal-header">
-		        <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+		        <h5 className="modal-title" id="examplrModalLabel">Fred Lintz</h5>
 		        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
 		      <div className="modal-body">
-		        Employer Modal Shiz goes here...
+			         <div className="modal-image">
+			        	<img id="modal-image" src="https://upload.wikimedia.org/wikipedia/en/a/ae/RonSwanson.jpg" style={{padding: "0", height: "100%", width: "100%"}} alt="Employer Modal"/>
+			        	<div id="modal-text">
+			        	<p>Full Stack Web Ninja</p>
+			        	<p>Super chill, super fly, super coder</p>
+			        	</div>
+		          </div>
+		        </div>	
 		      </div>
 		    </div>
 		  </div>
-		</div>
+		
 	)
 }
-
-
-
 
 export default ModalSwipeEmployer;
